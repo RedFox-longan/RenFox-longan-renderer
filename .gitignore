@@ -1,0 +1,20 @@
+# cmake
+cmake-build-debug/
+cmake-build-debug-mingw/
+cmake-build-debug-visual-studio/
+
+cmake-build-release/
+cmake-build-release-mingw/
+cmake-build-release-visual-studio/
+
+# xmake
+.xmake/
+build/
+
+# MacOS
+.DS_Store/
+
+# idea
+.idea/
+idea/
+out/
