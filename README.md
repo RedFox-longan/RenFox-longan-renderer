@@ -11,6 +11,6 @@ Space Longan Renderer 是免费开源的C/C++的图形渲染绘图库（软渲�
 使用CMake构建
 
 ```
-git clone https://github.com/uxnt/mint-engine.git
+git clone https://github.com/space-longan/space-longan-renderer.git
 cd space-longan-renderer
 ```
