@@ -44,7 +44,15 @@ else ()
     endif ()
 endif ()
 
+# 添加 main.cpp文件启动
+add_executable(space-longan-renderer
+        source/main.cpp
+        )
 
+# GCC 添加库文件
+target_link_libraries(space-longan-renderer
+        mingw32
+        )
 
 
 
