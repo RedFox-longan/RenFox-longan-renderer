@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(space-longan-renderer C CXX)
 
-# C++17 - 32bit
+# C++17 - 32bit static libgcc
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-m32")
 # set(CMAKE_CXX_FLAGS "-static")
