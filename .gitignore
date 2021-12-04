@@ -18,3 +18,11 @@ build/
 .idea/
 idea/
 out/
+
+# vscode
+.vscode
+
+# kde
+.kde
+*.kde
+build_*
