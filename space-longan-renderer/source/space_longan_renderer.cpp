@@ -1,5 +1,3 @@
-// space_longan_renderer.h
-
 #include "space_longan_renderer.h"
 
 #include <iostream>
