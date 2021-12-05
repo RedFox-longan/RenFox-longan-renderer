@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(space-longan-renderer C CXX)
+project(main C CXX)
 
 # C++17 - 32bit static libgcc
 set(CMAKE_CXX_STANDARD 17)
@@ -44,17 +44,12 @@ else ()
     endif ()
 endif ()
 
-# 添加 main.cpp文件启动
-add_executable(space-longan-renderer
-        source/main.cpp
-        )
+# 添加头文件(*/include)
+include_directories(space-longan-renderer/include)
+include_directories(demo/include)
 
-# GCC 添加库文件
-target_link_libraries(space-longan-renderer
-        mingw32
-        )
-
-
-
+# 添加创建库文件的子目录
+add_subdirectory(space-longan-renderer)
+add_subdirectory(demo)
 
 
