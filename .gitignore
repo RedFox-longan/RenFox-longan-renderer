@@ -1,15 +1,22 @@
 # cmake
 cmake-build-debug/
 cmake-build-debug-mingw/
+cmake-build-debug-mingw64/
 cmake-build-debug-visual-studio/
 
 cmake-build-release/
 cmake-build-release-mingw/
+cmake-build-release-mingw64/
 cmake-build-release-visual-studio/
 
 # xmake
 .xmake/
 build/
+output/
+x64/
+Debug/
+Release/
+
 
 # MacOS
 .DS_Store/
@@ -21,6 +28,7 @@ out/
 
 # vscode
 .vscode
+.vs
 
 # kde
 .kde
