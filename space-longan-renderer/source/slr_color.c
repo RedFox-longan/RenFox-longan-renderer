@@ -2,7 +2,7 @@
 // Created by beanflame - 2021/7/26
 //
 
-#include "color.h"
+#include "slr_color.h"
 
 
 slr_color slrColor(slr_uchar red, slr_uchar green, slr_uchar blue, slr_uchar alpha) {
