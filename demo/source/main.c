@@ -87,53 +87,29 @@ int main() {
         }
     }
 
-    int xe, ye, xe2, xy2 = 0;
-    for (int i = 0; i < 100000; i++) {
-        xe = rand() % 256 * 2 + 1;
-        ye = rand() % 256 * 2 + 1;
-        xe2 = rand() % 256 * 2 + 1;
-        xy2 = rand() % 256 * 2 + 1;
-        slrDrawLine(image, xe, ye, xe2, xy2, slrColor(
-                rand() % 255 + 1,
-                rand() % 255 + 1,
-                rand() % 255 + 1,
-                255
-                    )
+
+    for (int i = 0; i < 50; i++) {
+        slrDrawLine(
+                image,
+                rand() % 512 + 1,
+                rand() % 512 + 1,
+                rand() % 512 + 1,
+                rand() % 512 + 1,
+                slrColor(
+                        rand() % 255 + 1,
+                        rand() % 255 + 1,
+                        rand() % 255 + 1,
+                        255
+                )
         );
     }
 
     slrSystemRender(image);
 
-
     slrCreateWindow("Space Longan Renderer 0.0.1 - alpha", 512, 512);
 
-
-    //
-
-
     // slCreateWindow("Space Longan",800,600);
-
-
-
-    //  ezInit("窗口标题", 520, 640);
-
-
     //slrSystemRender(test);
-
-
-
-    //
-
-
 
     return 0;
 }
-
-
-
-
-
-
-
-
-// -static-libgcc -mwindows -lopengl32 -m32
