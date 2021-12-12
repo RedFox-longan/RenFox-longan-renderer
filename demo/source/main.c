@@ -22,7 +22,16 @@ slr_color *slrCreateImage(int width, int height) {
 
 
 void slrRGBADrawLine(slr_color *p, int x1, int y1, int x2, int y2, slr_color color) {
+}
 
+
+void slrDrawRectangle(slr_color *p, int x1, int y1, int x2, int y2, slr_color color) {
+
+    for (int h = 0; h < 250; h++) {
+        for (int w = 0; w < 250; w++) {
+            slrSetPixel(p, w, h, color);
+        }
+    }
 }
 
 
@@ -51,11 +60,13 @@ void slrDrawLine(slr_color *p, int x1, int y1, int x2, int y2, slr_color color) 
 
 
 int main() {
-    slr_color *image = slrCreateImage(256 * 2, 256 * 2);
 
 
-    for (int h = 0; h < 256 * 2; h++) {
-        for (int w = 0; w < 256 * 2; w++) {
+    slr_color *image = slrCreateImage(512, 512);
+
+
+    for (int h = 0; h < 512; h++) {
+        for (int w = 0; w < 512; w++) {
             slrSetPixel(image, w, h, slrColor(255, 255, 255, 255));
 
         }
@@ -105,11 +116,10 @@ int main() {
     }
 
     slrSystemRender(image);
-
     slrCreateWindow("Space Longan Renderer 0.0.1 - alpha", 512, 512);
 
-    // slCreateWindow("Space Longan",800,600);
-    //slrSystemRender(test);
 
+    // slSystemRender(test);
+    // slCreateWindow("Space Longan",800,600);
     return 0;
 }
